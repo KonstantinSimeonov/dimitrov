@@ -1,0 +1,9 @@
+services:
+  test:
+    image: node:16
+    volumes:
+      - ./:/cv
+    working_dir: /cv
+    ports:
+      - "5000:3000"
+    command: sh -c 'npm i && npm run dev -- --host'
