@@ -3,7 +3,8 @@ import Photo from "./assets/photo.png";
 import "./index.css";
 import { JobDescription } from "../components/job-description";
 import { SkillsList } from "../components/skill-list";
-import { leftBullets, jobs, bullets } from "../data";
+import { leftBullets, jobs, bullets, certs, education } from "../data";
+import {Certifications} from "../components/certifications";
 
 const Header = () => (
   <header>
@@ -62,6 +63,14 @@ export const Page = () => (
       {jobs.map((j) => (
         <JobDescription key={`${j.position} ${j.location}`} job={j} />
       ))}
+    </article>
+    <article>
+      <header><h2>Certification</h2></header>
+      <Certifications certs={certs} />
+    </article>
+    <article>
+      <header><h2>Education</h2></header>
+      {education.map(e => <JobDescription key={`${e.position} ${e.time}`} job={e} />)}
     </article>
   </main>
 );

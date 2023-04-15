@@ -1,8 +1,9 @@
+import {Certification} from "./components/certifications";
 import type { Job } from "./components/job-description";
 
 export const leftBullets = [
   `Expert at: Golang, Java`,
-  `Strong at: Bash, Javascript, Pythom, C, C++, C#, Haskell, Erlang, Ruby`,
+  `Strong at: Bash, Javascript, Python, C, C++, C#, Haskell, Erlang, Ruby`,
   `Web Frameworks: Spring Boot, Flask, Ruby on Rails`,
   `Databases: PostgreSQL, MySQL, Redis, MongoDB, GraphDB`,
   `Front-end: AngularJS, D3`,
@@ -99,3 +100,36 @@ parsers and transport protocols`,
       ),
   },
 ];
+
+export const certs: Certification[] = [
+  { date: `09/2018`, title: `Machine Learning`, href: `https://softuni.bg/trainings/1920/machine-learning-august-2018`, location: `SoftUni Bulgaria` },
+  { date: `07/2018`, title: `Date Science`, href: `https://softuni.bg/trainings/1919/data-science-june-2018`, location: `SoftUni Bulgaria` },
+  { date: `05/2018`, title: `Math Concepts for Developers`, href: `https://softuni.bg/trainings/1918/math-concepts-for-developers-april-2018`, location: `SoftUni Bulgaria` },
+  { date: `2014`, title: `Web Application Architectures`, location: `Coursera` },
+  { date: `2013`, title: `Machine Learning`, location: `Coursera` },
+  { date: `2012`, title: `DSD 2 (Deutsches Sprachdiplom Stufe 2)`, location: `Kulturminister Konferenz` },
+]
+
+export const education = [
+  {
+    position: `Master of Artificial Intelligence`,
+    location: `Sofia University`,
+    time: `2016 - 2018`
+  },
+  {
+    position: `Bachelor Degree in Computer Systems and Technologies (in German) `,
+    location: `Technical University Sofia`,
+    time: `2012 - 2016`,
+    description: `Collaborative undergraduate program w/ Otto-von-Guericke-Universität
+Magdeburg, Germany.
+Thesis: ”Integration of semantic technologies in the processing of news”.`
+  },
+  {
+    position: `Bachelor Degree in Computer Systems and Technologies (in German) `,
+    location: `Otto-von-Guericke-Universität Magdeburg`,
+    time: `2015`,
+    description: `Studied 6th semester in Magdeburg, Germany in their Informatics undergrad-
+uate program, part of my studies @ TU Sofia. Goal was to achieve a double
+graduation.`
+  }
+]

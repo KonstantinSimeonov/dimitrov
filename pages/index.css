@@ -124,3 +124,20 @@ section > p:last-child {
   font-style: normal;
   content: attr(data-emoji);
 }
+
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.certifications li {
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.certifications li * {
+  margin: 0;
+}

@@ -4,9 +4,9 @@ export type Job = {
   position: string;
   time: string;
   location: string;
-  description: string;
+  description?: string;
   responsibilites?: readonly string[];
-  techStack: readonly string[];
+  techStack?: readonly string[];
 };
 
 export const JobDescription: React.FC<{ job: Job }> = ({ job }) => (
@@ -16,7 +16,7 @@ export const JobDescription: React.FC<{ job: Job }> = ({ job }) => (
       <time data-emoji="📅">{job.time}</time>
       <strong data-emoji="📍">{job.location}</strong>
     </header>
-    <p>{job.description}</p>
+    {job.description ? <p>{job.description}</p> : null}
     {job.responsibilites ? (
       <ul>
         {job.responsibilites.map((r) => (
@@ -24,8 +24,9 @@ export const JobDescription: React.FC<{ job: Job }> = ({ job }) => (
         ))}
       </ul>
     ) : null}
-    <p>
+  { job.techStack ? <p>
       Tech Stack: <strong>{job.techStack.join(`, `)}</strong>
-    </p>
+    </p> : null
+  }
   </section>
 );
