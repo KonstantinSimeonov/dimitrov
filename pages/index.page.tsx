@@ -47,14 +47,11 @@ export const Page = () => (
       <header>
         <h2>Programming Expertise</h2>
       </header>
-      <section>
-        <h3>Languages, databases, frameworks</h3>
-        <SkillsList skills={leftBullets} />
-      </section>
-      <section>
-        <h3>Infrastructure and cloud</h3>
-        <SkillsList skills={bullets} />
-      </section>
+      <SkillsList
+        skills={[...bullets, ...leftBullets].sort(
+          (a, b) => (a.prio ?? 1000) - (b.prio || 1000)
+        )}
+      />
     </article>
     <article>
       <header>
@@ -65,12 +62,13 @@ export const Page = () => (
       ))}
     </article>
     <article>
-      <header><h2>Certification</h2></header>
+      <header>
+        <h2>Education & Certification</h2>
+      </header>
+      {education.map((e) => (
+        <JobDescription positionEmoji="🎓" key={`${e.position} ${e.time}`} job={e} />
+      ))}
       <Certifications certs={certs} />
-    </article>
-    <article>
-      <header><h2>Education</h2></header>
-      {education.map(e => <JobDescription key={`${e.position} ${e.time}`} job={e} />)}
     </article>
   </main>
 );

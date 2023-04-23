@@ -3,6 +3,7 @@ import * as React from "react";
 export type SkillListItem = {
   header: string
   items: readonly string[]
+  prio?: number
 }
 
 export const SkillsList: React.FC<{ skills: readonly SkillListItem[] }> = ({

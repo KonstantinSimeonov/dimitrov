@@ -26,7 +26,7 @@ async function render(pageContext: any) {
         <title>Tsvetan Dimitrov - Technical Lead</title>
       </head>
       <body>
-        <div id="page-view">${pageHtml}</div>
+        ${pageHtml}
       </body>
     </html>`)
 
