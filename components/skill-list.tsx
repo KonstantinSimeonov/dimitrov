@@ -1,16 +1,18 @@
 import * as React from "react";
 
-export type SkillListItem = `${string}: ${string}`;
+export type SkillListItem = {
+  header: string
+  items: readonly string[]
+}
 
 export const SkillsList: React.FC<{ skills: readonly SkillListItem[] }> = ({
   skills,
 }) => (
   <ol>
     {skills.map((skill) => {
-      const [def, content] = skill.split(`: `);
       return (
-        <li key={skill}>
-          {def}: <strong>{content}</strong>
+        <li key={skill.header}>
+          <h5>{skill.header}</h5>{skill.items.map(w => <code key={w}>{w}</code>)}
         </li>
       );
     })}

@@ -48,11 +48,11 @@ export const Page = () => (
         <h2>Programming Expertise</h2>
       </header>
       <section>
-        <h2>Languages, databases, frameworks</h2>
+        <h3>Languages, databases, frameworks</h3>
         <SkillsList skills={leftBullets} />
       </section>
       <section>
-        <h2>Infrastructure and cloud</h2>
+        <h3>Infrastructure and cloud</h3>
         <SkillsList skills={bullets} />
       </section>
     </article>

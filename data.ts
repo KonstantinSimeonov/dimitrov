@@ -2,20 +2,20 @@ import {Certification} from "./components/certifications";
 import type { Job } from "./components/job-description";
 
 export const leftBullets = [
-  `Expert at: Golang, Java`,
-  `Strong at: Javascript, Python, C++, C#, Haskell, Erlang`,
-  `Web Frameworks: Spring Boot, Flask, Ruby on Rails`,
-  `Databases: PostgreSQL, MySQL, Redis, MongoDB, GraphDB`,
-  `Front-end: AngularJS, D3`,
+  { header: `Expert at`, items: [`Golang`, `Java`] },
+  { header: `Strong at`, items: [`Javascript`, `Python`, `C++`, `C#`, `Haskell`, `Erlang`] },
+  { header: `Web Frameworks`, items: [`Spring Boot`, `Flask`, `Ruby on Rails`] },
+  { header: `Databases`, items: [`PostgreSQL`, `MySQL`, `Redis`, `MongoDB`, `GraphDB`] },
+  { header: `Front-end`, items: [`AngularJS`, `D3`] },
 ] as const;
 
 export const bullets = [
-  `GCP: Cloud Storage, Firebase, PubSub, Cloud Functions, GKE, Cloud Vision`,
-  `AWS: EC2, VPC, ECS, Kinesis, SQS, SNS, Elastic Beanstalk, Lambda, DynamoDB, RDS, Elasticsearch`,
-  `DevOps: Terraform, Ansible, Bash`,
-  `Build Tools: go-mod, Maven, Gradle, Bundler, Pip`,
-  `Source Control: Git, SVN`,
-  `CI/CD: Gitlab CI/CD, Jenkins, Buildkite`,
+  { header: `GCP`, items: [`Cloud Storage`, `Firebase`, `PubSub`, `Cloud Functions`, `GKE`, `Cloud Vision`] },
+  { header: `AWS`, items: [`EC2, ECS, VPC`, `Kinesis`, `SQS, SNS`, `Elastic Beanstalk`, `Lambda`, `RDS, DynamoDB`, `Elasticsearch`] },
+  { header: `DevOps`, items: [`Terraform`, `Ansible`, `Bash`] },
+  { header: `Build Tools`, items: [`go-mod`, `Maven`, `Gradle`, `Bundler`, `Pip`] },
+  { header: `SVC`, items: [`Git`, `SVN`] },
+  { header: `CI/CD`, items: [`Gitlab CI/CD`, `Jenkins`, `Buildkite`] },
 ] as const;
 
 export const jobs: readonly Job[] = [
