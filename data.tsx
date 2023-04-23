@@ -100,7 +100,7 @@ export const certs: Certification[] = [
   { date: `09/2018`, title: `Machine Learning`, href: `https://softuni.bg/trainings/1920/machine-learning-august-2018`, location: `SoftUni Bulgaria` },
   { date: `07/2018`, title: `Date Science`, href: `https://softuni.bg/trainings/1919/data-science-june-2018`, location: `SoftUni Bulgaria` },
   { date: `05/2018`, title: `Math Concepts for Developers`, href: `https://softuni.bg/trainings/1918/math-concepts-for-developers-april-2018`, location: `SoftUni Bulgaria` },
-  { date: `2012`, title: `DSD 2 (Deutsches Sprachdiplom Stufe 2)`, location: `Kulturminister Konferenz` },
+  { date: `2012`, title: `Deutsches Sprachdiplom 2`, location: `Kulturminister Konferenz` },
 ]
 
 export const education = [

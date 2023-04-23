@@ -14,8 +14,8 @@ export const Certifications: React.FC<{
 }> = ({ certs }) => (
     <ol className="certifications">
       {certs.map(c => <li key={`${c.title} ${c.date}`}>
-            <h3>{c.href ? <a href={c.href}>{c.title}</a> : c.title}</h3>
             <time data-emoji="📅">{c.date}</time>
+            <h3>{c.href ? <a href={c.href}>{c.title}</a> : c.title}</h3>
             <strong data-emoji="📍">{c.location}</strong>
             {c.imgUrl ? <img src={c.imgUrl} /> : null}
         </li>)}

@@ -155,6 +155,7 @@ section > p:last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-left: 0.5rem;
 }
 
 .certifications li {
