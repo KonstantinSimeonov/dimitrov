@@ -141,3 +141,7 @@ section > p:last-child {
 .certifications li * {
   margin: 0;
 }
+
+h3 a {
+  font-weight: bold;
+}
