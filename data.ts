@@ -3,20 +3,19 @@ import type { Job } from "./components/job-description";
 
 export const leftBullets = [
   `Expert at: Golang, Java`,
-  `Strong at: Bash, Javascript, Python, C, C++, C#, Haskell, Erlang, Ruby`,
+  `Strong at: Javascript, Python, C++, C#, Haskell, Erlang`,
   `Web Frameworks: Spring Boot, Flask, Ruby on Rails`,
   `Databases: PostgreSQL, MySQL, Redis, MongoDB, GraphDB`,
   `Front-end: AngularJS, D3`,
 ] as const;
 
 export const bullets = [
-  `Google Cloud Platform: Cloud Storage, Firebase, PubSub, Cloud Functions, GKE, Cloud Vision`,
-  `Amazon Web Services: EC2, VPC, ECS, Kinesis, SQS, SNS, Elastic Beanstalk, Lambda, DynamoDB, RDS, Elasticsearch`,
-  `Dev Ops: Terraform, Ansible, Bash`,
+  `GCP: Cloud Storage, Firebase, PubSub, Cloud Functions, GKE, Cloud Vision`,
+  `AWS: EC2, VPC, ECS, Kinesis, SQS, SNS, Elastic Beanstalk, Lambda, DynamoDB, RDS, Elasticsearch`,
+  `DevOps: Terraform, Ansible, Bash`,
   `Build Tools: go-mod, Maven, Gradle, Bundler, Pip`,
-  `Source Control Tools: Git, SVN`,
-  `CI/CD Tools: Gitlab CI/CD, Jenkins, Buildkite`,
-  `Operating Systems: Linux, MacOS`,
+  `Source Control: Git, SVN`,
+  `CI/CD: Gitlab CI/CD, Jenkins, Buildkite`,
 ] as const;
 
 export const jobs: readonly Job[] = [
@@ -24,12 +23,12 @@ export const jobs: readonly Job[] = [
     position: `Technical Lead`,
     time: `07/21 - ongoing`,
     location: `OpenTag, Sofia, Bulgaria`,
-    description: `Managing a team of 9 people building a Loyalty Program for OpenTag’s betting platform in Golang. Main responsibilities:`,
+    description: `Managing a team of 9 people building a Loyalty Program for OpenTag’s betting platform in Golang.`,
     responsibilites:
-      `Planning and leading technical initiatives based on product require- ments.
-Designing and implementing system components for high availability and fault tolerance.
-Managing and identifying technical debt.
-Contributing in company wide initiatives for technical conventions and improvements.`.split(
+      `Plan and lead technical initiatives based on product requirements.
+Design and implement system components for high availability and fault tolerance.
+Identify and manage technical debt.
+Contribute to company wide initiatives for technical conventions and improvements.`.split(
         `\n`
       ),
     techStack: `Golang, PostgreSQL, Redis, Kafka, Kubernetes, GCP`.split(`, `),
@@ -38,12 +37,12 @@ Contributing in company wide initiatives for technical conventions and improveme
     position: `Senior Software Engineer`,
     time: `03/19 - 07/21`,
     location: `Financial Times, Sofia, Bulgaria`,
-    description: `Developing FT’s Universal Publishing Platform (UPP) in Golang managing published content from journalists and extracting metadata from the unstruc- tured content forming a knowledge graph. Main responsibilies:`,
+    description: `Developed FT’s Universal Publishing Platform in Golang managing published content from journalists and extract metadata from unstructured content forming a knowledge graph.`,
     responsibilites:
-      `Implementing features for publishing different types of content (articles, audio, video, etc.) on ft.com.
-Building a new CI/CD pipeline for deployment of all 150 microservices on AWS EKS.
-Participating in cross team initiatives - building an experimental recom- mendation engine for article content.
-Developing PoCs for platform improvement (gRPC communication, API documentation generation, etc.) adhering to Golang best practices.`.split(
+      `Implemented features for publishing different types of content (articles, audio, video, etc.) on ft.com.
+Built a new CI/CD pipeline for deployment of all 150 microservices on AWS EKS.
+Participated in cross team initiatives - building a recommendation engine for article content.
+Developed platform improvements (gRPC communication, API docs generation, etc.)`.split(
         `\n`
       ),
     techStack: `Golang, Java, Python, MongoDB, Kafka, Kubernetes, AWS`.split(
@@ -54,12 +53,12 @@ Developing PoCs for platform improvement (gRPC communication, API documentation 
     position: `Software Developer`,
     time: `03/18 - 02/19`,
     location: `Urban.IO, Sofia, Bulgaria`,
-    description: `Developing a remote monitoring platform, including IoT sensor devices, measuring different metrics, e.g. temperature, humidity, flood detection etc. Main responsibilities as main developer included:`,
+    description: `Main developer on a remote monitoring platform, including IoT sensor devices, measuring different metrics, e.g. temperature, humidity, flood detection etc.`,
     responsibilites:
-      `Designing and implementing the data exchange via UDP between the devices and the cloud platform on AWS.
-Building a REST API for providing historical readings from the sensors.
-Integrating and automating SIM management operations for gateway devices with mobile connectivity.
-Building factory test procedures aiding the device manufacturing process.`.split(
+      `Designed and implementing the data exchange via UDP between the devices and the cloud platform on AWS.
+Built a REST API for providing historical readings from the sensors.
+Integrated and automated SIM management operations for gateway devices with mobile connectivity.
+Built factory test procedures aiding the device manufacturing process.`.split(
         `\n`
       ),
     techStack:
@@ -69,7 +68,7 @@ Building factory test procedures aiding the device manufacturing process.`.split
     position: `Software Developer`,
     time: `03/17 - 03/18`,
     location: `Urbanise Ltd., Sofia, Bulgaria`,
-    description: `Developing a property management platform based on a microservice
+    description: `Developed a property management platform based on a microservice
 architecture`,
     techStack:
       `Java, Spring Boot, Spring Cloud, Netflix OSS, PostgreSQL, AWS`.split(
@@ -80,7 +79,7 @@ architecture`,
     position: `Software Developer`,
     time: `03/15 - 03/17`,
     location: `Ontotext AD, Sofia, Bulgaria`,
-    description: `Developing external plugins and a workbench for Ontotext’s main product GraphDBTM triplestore - a database for semantic metadata. Developed expertise with semantic technologies (RDF, SPARQL), graph databases and visualisation of RDF data`,
+    description: `Worked on external plugins and a workbench for Ontotext’s main product GraphDBTM triplestore - a database for semantic metadata. Developed expertise with semantic technologies (RDF, SPARQL), graph databases and visualisation of RDF data`,
     techStack:
       `Java, Spring, RDF, SPARQL, AngularJS, D3`.split(
         `, `
@@ -90,7 +89,7 @@ architecture`,
     position: `Junior Software Developer`,
     time: `05/13 - 03/15`,
     location: `Ontotext AD, Sofia, Bulgaria`,
-    description: `Responsible for writing / supporting scrapers (crawling agents) for websites
+    description: `Wrote / supported scrapers (crawling agents) for websites
 in the recruitment sector. Administered the MySQL database of all job
 vacancies. Developed expertise in many web technologies by using different
 parsers and transport protocols`,
@@ -128,8 +127,7 @@ Thesis: ”Integration of semantic technologies in the processing of news”.`
     position: `Bachelor Degree in Computer Systems and Technologies (in German) `,
     location: `Otto-von-Guericke-Universität Magdeburg`,
     time: `2015`,
-    description: `Studied 6th semester in Magdeburg, Germany in their Informatics undergrad-
-uate program, part of my studies @ TU Sofia. Goal was to achieve a double
+    description: `Studied 6th semester in Magdeburg, Germany in their Informatics undergraduate program, part of my studies @ TU Sofia. Goal was to achieve a double
 graduation.`
   }
 ]

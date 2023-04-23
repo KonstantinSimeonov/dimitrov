@@ -3,8 +3,7 @@ export { render }
 export const passToClient = ['pageProps', 'urlPathname']
 
 import ReactDOMServer from 'react-dom/server'
-import * as React from 'react'
-import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr/server'
+import { dangerouslySkipEscape } from 'vite-plugin-ssr/server'
 
 async function render(pageContext: any) {
   const { Page, pageProps } = pageContext
@@ -16,7 +15,6 @@ async function render(pageContext: any) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports
-  const title = (documentProps && documentProps.title) || 'Vite SSR app'
   const desc = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr'
 
   const documentHtml = dangerouslySkipEscape(`<!DOCTYPE html>

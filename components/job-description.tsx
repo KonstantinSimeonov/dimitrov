@@ -25,7 +25,7 @@ export const JobDescription: React.FC<{ job: Job }> = ({ job }) => (
       </ul>
     ) : null}
   { job.techStack ? <p>
-      Tech Stack: <strong>{job.techStack.join(`, `)}</strong>
+      Tech: <strong>{job.techStack.join(`, `)}</strong>
     </p> : null
   }
   </section>

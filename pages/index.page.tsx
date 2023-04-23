@@ -4,7 +4,7 @@ import "./index.css";
 import { JobDescription } from "../components/job-description";
 import { SkillsList } from "../components/skill-list";
 import { leftBullets, jobs, bullets, certs, education } from "../data";
-import {Certifications} from "../components/certifications";
+import { Certifications } from "../components/certifications";
 
 const Header = () => (
   <header>
@@ -14,7 +14,7 @@ const Header = () => (
     <div>
       <div>
         <h1>Tsvetan Dimitrov</h1>
-        <p>Golang Technical Lead / Software Architect / Senior Developer</p>
+        <p>Golang Technical Lead / Software Architect</p>
       </div>
       <div>
         <ul>
